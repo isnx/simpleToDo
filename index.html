@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="add-panel">
+        <span class="card-title">Task List</span>
+        <form id="task-form">
+          <div class="task-form">
+            <input type="text" name="task" id="add-task" />
+            <label for="add-task">New Task</label>
+          </div>
+          <input type="submit" value="ADD TASK" class="add-btn" />
+        </form>
+      </div>
+      <div class="main">
+        <h5>My Tasks</h5>
+        <div class="filter">
+          <input type="text" name="filter" id="filter" />
+          <label for="filter">Filter</label>
+        </div>
+        <ul class="my-list"></ul>
+        <button>CLEAR TASKS</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
